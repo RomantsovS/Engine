@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="3D">
+      <UniqueIdentifier>{b4efc38c-2490-4fbe-a29f-f9b5c981062c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{197c6492-e59f-4eb2-b2e1-90224dfef20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation">
+      <UniqueIdentifier>{4d4661ba-89e6-40fa-b212-1c2f39b8ae91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{775d3588-b304-41d5-8782-35190c5a8824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{cafb4081-f666-459f-b4a0-0b68ae85dc5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\3D\3DDefs.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Camera.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Frustrum.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Math1D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Math3D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Matrix2D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Matrix3D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\OpenGLView.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Plane.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Quaternion.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Vector2D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Vector3D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\Vector4D.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3D\View.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Application.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\GameController.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\World.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\Array.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\AutoreleasePool.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\Data.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\Object.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\ObjStr.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\Queue.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Foundation\Timer.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\Controller.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\DirectXInputReader.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\events.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\Input.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\InputReader.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\Keys.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface\Model.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lua\MyLua.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\3D\Camera.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Frustrum.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Math3D.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Matrix2D.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Matrix3D.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\OpenGLView.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Plane.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Quaternion.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\Vector3D.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3D\View.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Application.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\GameController.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Main.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\World.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\Array.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\AutoreleasePool.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\Data.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\Object.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\ObjStr.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\Queue.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Foundation\Timer.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface\Controller.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface\DirectXInputReader.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface\Events.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface\Model.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lua\MyLua.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

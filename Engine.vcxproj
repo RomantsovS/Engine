@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACB97684-DB82-41D5-BA98-3BE9360CE851}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27625.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\roman\Documents\Samopal\Lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib glu32.lib glaux.lib dinput.lib dxguid.lib dinput8.lib lua5.1.4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\roman\Documents\Samopal\Lua\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\3D\3DDefs.h" />
+    <ClInclude Include="Source\3D\Camera.h" />
+    <ClInclude Include="Source\3D\Frustrum.h" />
+    <ClInclude Include="Source\3D\Math1D.h" />
+    <ClInclude Include="Source\3D\Math3D.h" />
+    <ClInclude Include="Source\3D\Matrix2D.h" />
+    <ClInclude Include="Source\3D\Matrix3D.h" />
+    <ClInclude Include="Source\3D\OpenGLView.h" />
+    <ClInclude Include="Source\3D\Plane.h" />
+    <ClInclude Include="Source\3D\Quaternion.h" />
+    <ClInclude Include="Source\3D\Vector2D.h" />
+    <ClInclude Include="Source\3D\Vector3D.h" />
+    <ClInclude Include="Source\3D\Vector4D.h" />
+    <ClInclude Include="Source\3D\View.h" />
+    <ClInclude Include="Source\Engine\Application.h" />
+    <ClInclude Include="Source\Engine\GameController.h" />
+    <ClInclude Include="Source\Engine\World.h" />
+    <ClInclude Include="Source\Foundation\Array.h" />
+    <ClInclude Include="Source\Foundation\AutoreleasePool.h" />
+    <ClInclude Include="Source\Foundation\Data.h" />
+    <ClInclude Include="Source\Foundation\Object.h" />
+    <ClInclude Include="Source\Foundation\ObjStr.h" />
+    <ClInclude Include="Source\Foundation\Queue.h" />
+    <ClInclude Include="Source\Foundation\Timer.h" />
+    <ClInclude Include="Source\Interface\Controller.h" />
+    <ClInclude Include="Source\Interface\DirectXInputReader.h" />
+    <ClInclude Include="Source\Interface\events.h" />
+    <ClInclude Include="Source\Interface\Input.h" />
+    <ClInclude Include="Source\Interface\InputReader.h" />
+    <ClInclude Include="Source\Interface\Keys.h" />
+    <ClInclude Include="Source\Interface\Model.h" />
+    <ClInclude Include="Source\Lua\MyLua.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\3D\Camera.cpp" />
+    <ClCompile Include="Source\3D\Frustrum.cpp" />
+    <ClCompile Include="Source\3D\Math3D.cpp" />
+    <ClCompile Include="Source\3D\Matrix2D.cpp" />
+    <ClCompile Include="Source\3D\Matrix3D.cpp" />
+    <ClCompile Include="Source\3D\OpenGLView.cpp" />
+    <ClCompile Include="Source\3D\Plane.cpp" />
+    <ClCompile Include="Source\3D\Quaternion.cpp" />
+    <ClCompile Include="Source\3D\Vector3D.cpp" />
+    <ClCompile Include="Source\3D\View.cpp" />
+    <ClCompile Include="Source\Engine\Application.cpp" />
+    <ClCompile Include="Source\Engine\GameController.cpp" />
+    <ClCompile Include="Source\Engine\Main.cpp" />
+    <ClCompile Include="Source\Engine\World.cpp" />
+    <ClCompile Include="Source\Foundation\Array.cpp" />
+    <ClCompile Include="Source\Foundation\AutoreleasePool.cpp" />
+    <ClCompile Include="Source\Foundation\Data.cpp" />
+    <ClCompile Include="Source\Foundation\Object.cpp" />
+    <ClCompile Include="Source\Foundation\ObjStr.cpp" />
+    <ClCompile Include="Source\Foundation\Queue.cpp" />
+    <ClCompile Include="Source\Foundation\Timer.cpp" />
+    <ClCompile Include="Source\Interface\Controller.cpp" />
+    <ClCompile Include="Source\Interface\DirectXInputReader.cpp" />
+    <ClCompile Include="Source\Interface\Events.cpp" />
+    <ClCompile Include="Source\Interface\Model.cpp" />
+    <ClCompile Include="Source\Lua\MyLua.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

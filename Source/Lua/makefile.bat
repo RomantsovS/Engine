@@ -1,0 +1,1 @@
+tolua++.exe -n ex_6 -o ex_6_reg.cpp -H ex_6_reg.h ex_6.pkg
